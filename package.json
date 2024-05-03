@@ -1,10 +1,13 @@
 {
+  "homepage": "https://umesh1241.github.io/PhoneBook/",
   "name": "server",
   "version": "1.0.0",
   "description": "testing application",
   "main": "index.js",
   "scripts": {
-    "start" : "node server",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "start": "node server",
     "server": "nodemon server"
   },
   "author": "",
